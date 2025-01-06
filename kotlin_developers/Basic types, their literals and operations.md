@@ -633,3 +633,57 @@ fun main() {
     println("A" + 1 + 2) // A12
 }
 ```
+
+<hr/>
+
+1. 기본 타입과 리터럴<br>
+Kotlin에서는 숫자, 불리언, 문자, 문자열과 같은 기본 값을 표현하기 위해 기본 타입과 리터럴을 제공합니다.<br>
+숫자: Int, Long, Double, Float, Short, Byte<br>
+불리언: Boolean (true/false)<br>
+문자: Char ('a', 'b' 등)<br>
+문자열: String ("test" 등)<br>
+리터럴은 특정 값을 나타내기 위한 기본 표기법입니다.<br>
+예: 123 (정수), 3.14 (실수), "hello" (문자열)<br>
+<br>
+
+2. 숫자 타입<br>
+정수형: Int, Long, Byte, Short<br>
+접미사 L 사용 시 Long 타입 (42L)<br>
+Byte와 Short는 명시적 타입 지정 필요 (val b: Byte = 123)<br>
+실수형: Float, Double<br>
+접미사 F 사용 시 Float 타입 (42F)<br>
+기본 실수형은 Double (3.14)<br>
+<br>
+
+3. 명시적 변환<br>
+Kotlin은 암시적 타입 변환을 지원하지 않음.<br>
+타입을 변환하려면 .toInt(), .toLong() 등의 변환 함수를 사용해야 함.<br>
+<br>
+
+4. 숫자 리터럴의 형식<br>
+긴 숫자에서 _ 사용 가능 (가독성 향상)<br>
+다른 진법 지원:<br>
+16진수: 0x로 시작 (0xA4D6FEFE)<br>
+2진수: 0b로 시작 (0b010101)<br>
+<br>
+
+5. 수학 연산<br>
+기본 연산: +, -, *, /, % (나머지)
+복합 대입 연산: +=, -=, *=, /=, %=
+증감 연산: ++, --
+<br>
+
+6. 비트 연산<br>
+Kotlin에서는 비트 연산 메서드를 지원:<br>
+and, or, xor, shl(왼쪽 쉬프트), shr(오른쪽 쉬프트), ushr(부호 없는 오른쪽 쉬프트)<br>
+<br>
+
+7. 정밀 계산: BigDecimal과 BigInteger<br>
+Kotlin 기본 숫자 타입은 크기와 정밀도에 제한이 있음.<br>
+정밀한 계산이 필요할 때는 BigDecimal(소수 포함) 또는 BigInteger(정수) 사용.<br>
+변환 함수: .toBigDecimal(), .toBigInteger()<br>
+<br>
+
+8. 결론<br>
+Kotlin에서는 모든 기본 타입이 객체로 간주되며, 메서드와 제네릭에서 사용 가능.<br>
+타입 변환, 연산, 정밀 계산 기능을 활용해 다양한 숫자 관련 작업을 수행할 수 있음.<br>
